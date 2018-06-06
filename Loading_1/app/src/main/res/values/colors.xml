@@ -6,4 +6,5 @@
     <color name="pressed">#ffff66</color>
     <color name="focused">#ffff66</color>
     <color name="none">#eeee</color>
+    <color name="colorDialog">#ffcccc</color>>
 </resources>

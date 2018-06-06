@@ -4,14 +4,22 @@ public class FoodItem {
     String gender;
     String place;
     String time;
+    String set_time;
     int resId;
-    public FoodItem(String gender, String place, String time,int resId) {
+    public FoodItem(String gender, String place, String set_time,String time,int resId) {
         this.gender = gender;
         this.place = place;
         this.time = time;
+        this.set_time=set_time;
         this.resId = resId;
     }
 
+    public void setSet_time(String set_time) {
+        this.set_time = set_time;
+    }
+    public String getSet_time() {
+        return set_time;
+    }
     public int getResId() {
         return resId;
     }

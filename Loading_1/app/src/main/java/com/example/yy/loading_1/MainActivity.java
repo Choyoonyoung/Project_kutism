@@ -1,9 +1,11 @@
 package com.example.yy.loading_1;
 
+import android.content.Intent;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
     TabLayout tabLayout;
@@ -33,5 +35,11 @@ public class MainActivity extends AppCompatActivity {
         viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
     }
 
+
+
+    public void onSearchClicked(View view) {
+        Intent intent = new Intent(getApplicationContext(), SearchListActivity.class);
+        startActivity(intent);
+    }
 }
 

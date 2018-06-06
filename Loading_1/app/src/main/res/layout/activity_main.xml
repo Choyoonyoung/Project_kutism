@@ -17,26 +17,26 @@
         android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3">
+        app:layout_constraintTop_toBottomOf="@+id/imageView4">
 
         <android.support.design.widget.TabItem
             android:id="@+id/tab1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="전체글" />
+            android:text="전체먹방" />
 
         <android.support.design.widget.TabItem
             android:id="@+id/tab2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="나의 채팅방" />
+            android:text="나의 먹방" />
 
     </android.support.design.widget.TabLayout>
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="135dp"
-        android:layout_height="102dp"
+        android:layout_width="117dp"
+        android:layout_height="63dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
@@ -49,22 +49,23 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/logo_ex" />
+        app:srcCompat="@drawable/logo" />
 
     <ImageButton
         android:id="@+id/imageButton"
         android:layout_width="65dp"
-        android:layout_height="40dp"
+        android:layout_height="37dp"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="36dp"
-        android:background="@drawable/icon_on_off"
+        android:layout_marginTop="32dp"
+        android:background="#fff"
+        android:onClick="onSearchClicked"
         android:scaleType="centerInside"
-        android:src="@drawable/search_ex"
+        android:src="@drawable/search_on_off"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.441"
+        app:layout_constraintHorizontal_bias="0.846"
         app:layout_constraintStart_toEndOf="@+id/imageView3"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -76,45 +77,46 @@
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="36dp"
-        android:background="@drawable/icon_on_off"
+        android:layout_marginTop="28dp"
+        android:background="#fff"
         android:scaleType="centerInside"
-        android:src="@drawable/home"
+        android:src="@drawable/icon_on_off"
         app:layout_constraintEnd_toStartOf="@+id/imageView3"
-        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintHorizontal_bias="0.358"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
 
         />
 
-    <android.support.v4.view.ViewPager
-        android:id="@+id/viewPager"
-        android:layout_width="0dp"
-        android:layout_height="345dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tabLayout"
-        app:layout_constraintVertical_bias="1.0" />
 
-    <Button
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginBottom="28dp"
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="0dp"
+        android:layout_height="99dp"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
-        android:background="@drawable/plus"
-        android:scaleType="centerInside"
-        android:text="+"
-        android:textColor="#ffffff"
-        android:textSize="30dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:srcCompat="@drawable/banner" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="392dp"
+        android:layout_height="422dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="208dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.924"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="0.404" />
 
 
 </android.support.constraint.ConstraintLayout>

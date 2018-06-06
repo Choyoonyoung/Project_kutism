@@ -1,3 +1,22 @@
 <resources>
     <string name="app_name">Loading_1</string>
+    <string name="gender_prompt">성별</string>
+    <string-array name="gender_array">
+        <item>여자</item>
+        <item>남자</item>
+        <item>상관 없음</item>
+    </string-array>
+    <string name="place_prompt">장소</string>
+    <string-array name="place_array">
+        <item>기숙사 A동</item>
+        <item>기숙사 B동</item>
+        <item>기숙사 C동</item>
+        <item>학관</item>
+        <item>명은빌라아파트</item>
+    </string-array>
+    <string name="time_prompt">오전/오후</string>
+    <string-array name="time_array">
+        <item>오전</item>
+        <item>오후</item>
+    </string-array>
 </resources>

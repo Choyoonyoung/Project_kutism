@@ -11,7 +11,7 @@ import android.widget.TextView;
 public class FoodItemView extends LinearLayout {
 
     ImageView imageView;
-    TextView textGender,textPlace,textTime;
+    TextView textGender,textPlace,textTime,textSetTime;
 
     public FoodItemView(Context context) {
         super(context);
@@ -32,6 +32,7 @@ public class FoodItemView extends LinearLayout {
         textPlace = (TextView)findViewById(R.id.txtPlace);
         textTime = (TextView)findViewById(R.id.txtTime);
         imageView = (ImageView)findViewById(R.id.imageView);
+        textSetTime = (TextView)findViewById(R.id.txtSetTime);
     }
 
     public void setImageView(int resID) {
@@ -49,6 +50,8 @@ public class FoodItemView extends LinearLayout {
     public void setTextTime(String time) {
         textTime.setText(time);
     }
+
+    public void setTextSetTime(String s_time){ textSetTime.setText(s_time); }
 }
 
 
